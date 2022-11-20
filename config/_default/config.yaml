@@ -1,0 +1,37 @@
+baseURL: /
+title: Leyu's Blog
+theme: hugo-theme-bootstrap
+# copyright: 感谢 Razon Yang 提供的博客主题, 友链：[sss](https://www.baidu.com)
+defaultContentLanguage: zh-cn
+# hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
+# defaultContentLanguageInSubdir: true
+# disableLanguages:
+#  - fr
+#  - zh-cn
+#  - zh-tw
+paginate: 10
+# paginatePath: page
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+disqusShortname: leyublog
+
+
+blackfriday:
+  hrefTargetBlank: true
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  authors: authors
+
+build:
+  writeStats: true
+
+permalinks:
+  news: /news/:year/:month/:title/
+
+# module:
+  # proxy: https://goproxy.cn
