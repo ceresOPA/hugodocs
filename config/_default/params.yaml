@@ -38,13 +38,13 @@ palette: cyan # Default palette. Optional. You'll need to clear the browser cach
 # fullWidth: true # Full width.
 # fixedHeader: false # Turn on/off fixed header.
 
-# dateFormat: Jan 2, 2006
+dateFormat: Jan 2, 2006
 
 # Google Adsense
 googleAdsense: 
 
 # math: true # Enable math globally.
-# toc: false # Disable TOC globally.
+toc: true # Disable TOC globally.
 # tocPosition: content
 # breadcrumb: false # Disable breadcrumb
 # breadcrumbDivider: > # Breadcrumb divider
@@ -85,6 +85,7 @@ viewer: true # Image Viewer
 # backgroundImage: ['/images/bg-light.png', '/images/bg-dark.png']
 # rss: home # link the RSS button to homepage all the times.
 
+
 sidebar:
   # fixed: true
   # archives: true # Enable archives widget
@@ -108,7 +109,7 @@ post:
   copyright: false # Whether to display copyright section on each post.
   # plainifyExcerpt: false # Format excerpt in HTML if false.
   featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: true # Count headings automatically.
+  numberifyHeadings: false # Count headings automatically.
   # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
   numberifyHeadingsSeparator: . # The separator between of number and headings.
   # tocStyleType: decimal # The TOC's CSS list-style-type property.
@@ -250,10 +251,10 @@ contact:
     # siteKey: ""
 
 repo:
-  url: https://github.com/ceresopa
+  url: https://github.com/ceresopa/hugodocs
   branch: main
   # subPath: exampleSite
-  # dateFormat: 02/01/2006, 15:04:05 PM
+  dateFormat: 02/01/2006, 15:04:05 PM
 
 topAppBar:
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
