@@ -1,6 +1,6 @@
 ---
 type: docs 
-title: 【Lecture 0】机器学习概况 笔记
+title: 【Lecture 0】机器学习概况
 date: 2022-11-25
 featured: false
 draft: false

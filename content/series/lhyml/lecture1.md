@@ -1,6 +1,6 @@
 ---
 type: docs 
-title: 【Lecture 1】机器学习基本概念简介【笔记】
+title: 【Lecture 1】机器学习基本概念简介
 date: 2022-11-25
 featured: true
 draft: false
