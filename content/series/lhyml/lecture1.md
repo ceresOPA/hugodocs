@@ -10,6 +10,7 @@ reward: false
 pinned: false
 carousel: false
 math: true
+weight: 2
 series:
   - lhyml
 ---
@@ -23,8 +24,8 @@ series:
 * 任务
     * Regression
     * Classification
-    * Structured learning(黑暗大陆)
-        * 我们不仅是要机器能够做出选择，
+    * Structured learning (黑暗大陆)
+        * 我们不仅是要机器能够做出选择，能够给出一个数字，而且还要能够让他给出有结构的结果，如能够创造文章、图像
 
 ### 1. Function with Unknown Parameters
 
@@ -52,3 +53,9 @@ series:
         * $\eta$ learning rate
     * Update w iteratively
     * 局部最优不是梯度下降真正的痛点
+
+## 二、 更复杂的模型
+
+### 1. 回头看Function with Unknown Parameters
+
+我们之前讨论的$y=wx+b$，只是一个Linear Model，
