@@ -242,3 +242,23 @@ for epoch_idx in range(epochs):
         
 ```
 
+## 六、模型保存
+
+- 只保存模型参数
+
+```python
+#保存
+torch.save(the_model.state_dict(), PATH)
+#读取
+the_model = TheModelClass(*args, **kwargs)
+the_model.load_state_dict(torch.load(PATH))
+```
+
+- 保存整个模型
+
+```python
+#保存
+torch.save(the_model, PATH)
+#读取
+the_model = torch.load(PATH)
+```

@@ -1,0 +1,5 @@
+main:
+  - name: "收藏网站"
+    identifier: collection
+    url: "./series/collections/collection_website/"
+    weight: 10
