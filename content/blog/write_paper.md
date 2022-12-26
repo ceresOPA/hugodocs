@@ -1,6 +1,19 @@
-# The Craft of Research
+---
+title: "The Craft of Research"
+date: 2022-12-4
+draft: false
+toc: true
+featured : true
+categories: ["论文写作"]
+---
 
 
+
+学习写作，The Craft of Research
+
+
+
+<!--more-->
 
 - 思维上更加地有条理
 - 能够更加易于阅读

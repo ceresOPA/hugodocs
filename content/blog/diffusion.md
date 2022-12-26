@@ -1,10 +1,20 @@
-
-
-
+---
+title: 生成模型时间线
+date: 2022-12-05
+featured: false
+draft: false
+comment: true
+toc: true
+reward: false
+pinned: false
+carousel: false
+categories: ["学习"]
+tags: ["deep learning"]
+---
 
 > 生成模型时间线：GAN $\rightarrow$ AE $\rightarrow$ DAE $\rightarrow$ VAE $\rightarrow$ VQVAE $\rightarrow$ Diffusion Model
 
-
+<!--more-->
 
 - GAN
   - 结构：Generator	Discriminator

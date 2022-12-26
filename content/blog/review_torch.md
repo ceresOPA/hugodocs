@@ -230,7 +230,7 @@ for epoch_idx in range(epochs):
     #验证模型
     model.eval()
     validate_loss = 0.0
-    with torch.no_grad: #不计算梯度，加快运算速度
+    with torch.no_grad(): #不计算梯度，加快运算速度
         for batch_idx,(X,y) in enumerate(validate_dataset):
             X,y = X.to(device),y.to(device)
             pred = model(y)
