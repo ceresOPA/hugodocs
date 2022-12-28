@@ -12,7 +12,15 @@ math: true
 categories: ["学习"]
 ---
 
+
+
+KL散度
+
+
+
 <!-- more -->
+
+
 
 ## 什么是KL散度
 
