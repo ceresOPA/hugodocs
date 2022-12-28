@@ -48,3 +48,21 @@ series:
 #### Do we need q and k to compute attention?
 
 - Synthesizer
+
+
+
+
+
+## GNN
+
+### How
+
+1. Convolution
+2. SIgnal Process
+
+#### Convolution
+
+- aggregate
+  - mean、pool、LSTM
+  - 对邻居和自己一起进行aggregate，得到新的隐藏层的特征
+- readout

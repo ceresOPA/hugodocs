@@ -1,7 +1,6 @@
 ---
 title: "李宏毅机器学习笔记"
-carousel: true
-images: ["https://img.yulegend.cn/img/R-C.f522674d0f6df0373b154db92b1fe716"]
+carousel: false
 menu:
   main:
     parent: "专栏"

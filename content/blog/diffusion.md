@@ -8,6 +8,7 @@ toc: true
 reward: false
 pinned: false
 carousel: false
+math: true
 categories: ["学习"]
 tags: ["deep learning"]
 ---
