@@ -13,7 +13,7 @@ categories: ["学习"]
 tags: ["deep learning"]
 ---
 
-> 生成模型时间线：GAN $\rightarrow$ AE $\rightarrow$ DAE $\rightarrow$ VAE $\rightarrow$ VQVAE $\rightarrow$ Diffusion Model
+生成模型时间线：GAN --- AE --- DAE --- VAE --- VQVAE --- Diffusion Model
 
 <!--more-->
 
