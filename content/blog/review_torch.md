@@ -187,7 +187,7 @@ from mynetwork import myNetwork
 #定义超参数
 n_epochs = 60 #迭代次数,每个epoch会对整个训练集遍历一遍
 batch_size = 16 #一次加载的数据量，对一个epoch中的样本数的拆分
-learning_rate #学习率，或者说步长
+learning_rate = 0.001 #学习率，或者说步长
 
 #加载数据
 train_data = myDataset(is_train=True)
@@ -197,12 +197,12 @@ train_size = int(len(train_data)*0.8)
 validate_size = len(train_data) - train_size
 train_dataset,validate_dataset = random_split(train_data,[train_size,validate_size])
 #使用DataLoader加载数据集，转换为迭代器
-train_dataloader = DataLoader(train_dataset,batch_size=batch_size,shuffle=True,random_seed=42)
+train_dataloader = DataLoader(train_dataset,batch_size=batch_size,shuffle=True)
 validate_dataloader = DataLoader(validate_dataset,batch_size=batch_size) #用于训练中验证模型效果，进而可以动态调整超参数，控制训练
 test_dataloader = DataLoader(test_dataset,batch_size=batch_size)
 
 #设置设备
-device = "cuda" if torch.cuda.is_avaliable() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 #加载模型
 model = myNetWork()
@@ -215,10 +215,10 @@ optimizer = torch.optim.SGD(model.parameters(),lr=learning_rate)
 criterion = nn.MSEloss()
 
 #训练模型
-for epoch_idx in range(epochs):
+for epoch_idx in range(n_epochs):
     model.train()
     train_loss = 0.0
-    for batch_idx,(X,y) in enumerate(train_dataset):
+    for batch_idx,(X,y) in enumerate(train_dataloader):
         optimizer.zero_grad()
         X,y = X.to(device),y.to(device)
         pred = model(y)
@@ -231,7 +231,7 @@ for epoch_idx in range(epochs):
     model.eval()
     validate_loss = 0.0
     with torch.no_grad(): #不计算梯度，加快运算速度
-        for batch_idx,(X,y) in enumerate(validate_dataset):
+        for batch_idx,(X,y) in enumerate(validate_dataloader):
             X,y = X.to(device),y.to(device)
             pred = model(y)
             loss = criterion(pred,y)

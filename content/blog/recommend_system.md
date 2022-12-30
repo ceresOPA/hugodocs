@@ -1,3 +1,13 @@
+---
+title: "零基础入门推荐系统-新闻推荐"
+draft: true
+toc: true
+featured : false
+tags:
+  - docker
+categories: ["学习"]
+---
+
 
 
 # 零基础入门推荐系统-新闻推荐
@@ -165,18 +175,46 @@ plt.savefig("./click_environment.png")
 
 点击来源中可以看到主要来源为1和2，其实从这上面的地区、设备、环境和来源来看，测试集和数据集的分布都基本一致，区别的地方只是数据量上的差异。
 
-### 步骤二、用户行为分析，使用可视化图表分析以下内容
+## 任务3：验证集构造与本地评分
 
-- 用户点击行为从时间戳上，能够判断连续点击？
+### 步骤一：验证集划分
 
+验证集的划分，采用了按用户占比进行划分的方式，训练集占80%，验证集占20%。
 
+首先是，从训练集的点击记录中得到用户id列表：
 
-- 用户在查看文章时，文章的之间是否存在相似性？
+```python
+train_user_id_list = train_click['user_id'].unique()
+```
 
+会得到有20000个用户，然后将前80%划给训练集，后20%划给验证集。
 
+```python
+train_size = int(len(train_user_id_list)*0.8)
+validate_size = len(train_user_id_list) - train_size
 
-- 用户在查看文章时，点击来源和文章类型是否存在关联？
+train_data = train_click[train_click['user_id'].isin(train_user_id_list[:train_size])]
+val_data = train_click[train_click['user_id'].isin(train_user_id_list[train_size:])]
+```
 
+#### 步骤二：评估函数
 
+使用到的评估函数为MRR(Mean Reciprocal Rank)，公式为：
+$$
+Score(user) = \sum_{k=1}^{5}{\frac{s(user,k)}{k}}
+$$
+最后的预测结果会给出可能点击的5篇文章的id，当命中对应文章的时候，$s(user,k) = 1$，为名找则为0，假如预测结果为[21, 12, 32, 16, 55]，命中的文章id为32，则分数为$\frac{1}{3}$。
 
-### 步骤三、文章内容分析，使用可视化图表分析以下内容
+```python
+def mrr(label,predict):
+    idx_list = []
+    for val in label:
+        try:
+            idx = predict.index(val)
+            idx_list.append(idx+1)
+        except:
+            pass
+    idx_list = 1/np.array(idx_list)
+    return np.sum(idx_list)
+```
+

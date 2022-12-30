@@ -1,15 +1,20 @@
 ---
 title: "conda常用操作"
 date: 2022-12-13
+featured: false
 draft: false
+comment: true
 toc: true
-featured : true
+reward: false
+pinned: false
+carousel: false
+math: true
 categories: ["学习"]
 ---
 
 anaconda 是一款能够创建与管理python虚拟环境的工具，这里记录下日常需要用到的conda命令。
 
-<!-- more --> 
+<!--more--> 
 
 ## 查看帮助
 
