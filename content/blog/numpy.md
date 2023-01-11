@@ -31,5 +31,36 @@ b = np.arange(6).reshape(2,3)
 c = np.append(a,b)
 ```
 
+- 使用np.concatenate()
+
+
+
+- 使用np.vstack()与np.hstack()
+
+
+
+## numpy改变数据类型
+
+```
+- i - 整数
+- b - 布尔
+- u - 无符号整数
+- f - 浮点
+- c - 复合浮点数
+- m - timedelta
+- M - datetime
+- O - 对象
+- S - 字符串
+- U - unicode 字符串
+- V - 固定的其他类型的内存块 ( void )
+```
+
+可以使用astype改变数组的数据类型
+
+```python
+x = np.arange(12) # x.dtype 会输出int32
+x = x.astype('f') # 可转化为float32
+```
+
 
 

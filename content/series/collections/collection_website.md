@@ -9,6 +9,7 @@ toc: true
 
 - 在线Latex公式编辑：[https://latexlive.com/](https://latexlive.com/)
 - 在线简历编辑：[木及简历](https://www.mujicv.com/)
+- 用于时间序列分析的Python库：[https://zhuanlan.zhihu.com/p/396504683](https://zhuanlan.zhihu.com/p/396504683)
 
 
 
@@ -32,3 +33,9 @@ toc: true
 - Coggle：[https://coggle.club/](https://coggle.club/)
 
 - mlcontests：[https://mlcontests.com/](https://mlcontests.com/)
+
+
+
+## 5. 博客论坛
+
+- towardsdatascience：[https://towardsdatascience.com/](https://towardsdatascience.com/)

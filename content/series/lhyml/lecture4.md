@@ -55,7 +55,11 @@ series:
 
 ## GNN
 
+> [图神经网络 GNN GAT & GCN（一） - 腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1618014)
+
 ### How
+
+做聚合的两种方式：
 
 1. Convolution
 2. SIgnal Process
@@ -66,3 +70,5 @@ series:
   - mean、pool、LSTM
   - 对邻居和自己一起进行aggregate，得到新的隐藏层的特征
 - readout
+  - 把所有的节点的特征聚合成一个代表整个图的向量表征
+
