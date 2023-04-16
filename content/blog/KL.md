@@ -24,11 +24,11 @@ KL散度用于衡量两个概率分布之间的相似程度，如对于随机变
 $$
 D_{KL}(P||Q) = H(P,Q)-H(P)
 $$
-其中$H(P)$表示随机变量$P$的熵，离散形式为$H(P) = \sum_{i}p(i)log{p(i)}$，类似的$H(P,Q) = \sum_{i}p(i){logq(i)}$，$p(i)$为P的概率分布，$q(i)$为Q的概率分布。（其实也就是交叉熵公式）计算过程有：
+其中$H(P)$表示随机变量$P$的熵，离散形式为$H(P) = -\sum_{i}p(i)log{p(i)}$，类似的$H(P,Q) = -\sum_{i}p(i){logq(i)}$，$p(i)$为P的概率分布，$q(i)$为Q的概率分布。（其实也就是交叉熵公式）计算过程有：
 $$
 \begin{align}
  D_{KL}(P||Q) &= H(P,Q)-H(P) \\
- &= \sum_{i}p(i)log{p(i)}-\sum_{i}p(i)log{q(i)} \\
+ &= -\sum_{i}p(i)log{q(i)}- \left(-\sum_{i}p(i)log{p(i)} \right) \\
  &= \sum_{i}p(i)log{\frac{p(i)}{q(i)}}
 \end{align}
 $$
@@ -62,4 +62,5 @@ $$
 \sum_{i}p(i) \left( \frac{q(i)}{p(i)} -1 \right) = 0
 $$
 即有，$D_{KL} \ge 0$。
+
 

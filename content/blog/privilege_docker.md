@@ -89,3 +89,13 @@ adduser --uid 1002 yule2022 --ingroup yule2022 --disabled-password
 
 
 
+
+
+## 卸载重装
+
+1. 卸载k8s
+
+
+
+
+

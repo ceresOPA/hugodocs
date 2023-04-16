@@ -1,6 +1,6 @@
 ---
 title: 记初次Kaggle比赛
-date: 2022-1-7
+date: 2023-1-7
 featured: false
 draft: false
 comment: true

@@ -46,3 +46,33 @@ conda activate env_name
 source activate env_name
 ```
 
+## 配置conda镜像源
+
+> 参考链接：[(9条消息) 使用.condarc对Anaconda更换国内镜像_如何 在.condarc 添加国内镜像 升级 anaconda_不同林的博客](https://blog.csdn.net/aclplr/article/details/107166476)
+
+可以查看目前配置的源
+
+```
+conda config --show-sources
+```
+
+在用户目录下创建~/.condarc，复制下面内容过去：
+
+```
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - defaults
+show_channel_urls: true
+```
+
+还原默认镜像源可以：
+
+```
+conda config --remove-key channels
+```
+

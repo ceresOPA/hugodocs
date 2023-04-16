@@ -104,7 +104,10 @@ Bert，基于transformer的encoder部分，在训练的时候主要进行了两�
 
 
 
-$precision = \frac{TP}{TP+FP}$ ，预测为正样本的里面，有多少是真正的正样本
+$precision = \frac{TP}{TP+FP}$ ，预测为正样本的里面，有多少是真正的正样本。
 
-$recall = \frac{TP}{TP+FN}$，实际为正样本的里面，预测出多少正样本	
+$recall = \frac{TP}{TP+FN}$，实际为正样本的里面，预测出多少正样本。
 
+$sensitively = \frac{TP}{TP+FN}$，灵敏度，实际为正样本里面，预测出多少正样本。
+
+$specifically = \frac{TN}{TN+FP}$，特异度，实际为负样本里面，预测出多少负样本。

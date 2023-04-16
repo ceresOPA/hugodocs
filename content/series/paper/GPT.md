@@ -17,7 +17,7 @@ series:
 
 ## GPT
 
-> 学习链接：
+> 学习链接：[GPT，GPT-2，GPT-3 论文精读【论文精读】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1AF411b7xQ/?spm_id_from=333.337.search-card.all.click&vd_source=c2f7f4fff13c57e0c204150799a5d8e4)
 
 ### 一、在GPT之前，NLP中存在哪些问题？
 
@@ -37,12 +37,3 @@ series:
 - 结构上的区别：
   - GPT用的是transformer的decoder，BERT用的是transformer的encoder
   - 但这样设计的原因是由它们的优化目标所决定的，GPT中设计的任务是利用极大自然估计的n-gram，和传统的语言模型是一样的，根据前n-1个词预测第n个词。
-
-## GPT-2
-
-
-
-
-
-## GPT-3
-

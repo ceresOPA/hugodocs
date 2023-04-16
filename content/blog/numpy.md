@@ -37,6 +37,13 @@ c = np.append(a,b)
 
 - 使用np.vstack()与np.hstack()
 
+```python
+a = [1,2,3]
+b = [4,5,6]
+np.vstack(a,b) # [[1,2,3],[4,5,6]]
+np.hstack(a,b) # [1,2,3,4,5,6]
+```
+
 
 
 ## numpy改变数据类型
