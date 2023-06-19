@@ -1,0 +1,1 @@
+[facebookresearch/simsiam: PyTorch implementation of SimSiam https//arxiv.org/abs/2011.10566 (github.com)](https://github.com/facebookresearch/simsiam/tree/main)

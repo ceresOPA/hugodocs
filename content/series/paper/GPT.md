@@ -13,7 +13,7 @@ series:
   - paper
 ---
 
-
+<!--more-->
 
 ## GPT
 

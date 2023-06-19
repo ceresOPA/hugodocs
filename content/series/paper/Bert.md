@@ -1,3 +1,18 @@
+---
+title: "BERT"
+featured: false
+draft: false
+comment: true
+toc: true
+reward: false
+pinned: false
+carousel: false
+math: true
+categories: ["学习"]
+---
+
+<!--more-->
+
 # BERT
 
 > 视频链接：[BERT从零详细解读，通俗易懂！！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Ey4y1874y?p=1&vd_source=c2f7f4fff13c57e0c204150799a5d8e4)

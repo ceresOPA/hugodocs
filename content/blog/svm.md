@@ -1,4 +1,13 @@
-
+---
+title: "SVM分类"
+date: 
+draft: true
+toc: true
+featured : true
+tags:
+  - 
+categories: ["学习"]
+---
 
 > SVM有三宝，间隔、对偶、核技巧
 

@@ -12,6 +12,8 @@ math: true
 categories: ["学习"]
 ---
 
+<!--more-->
+
 > 参考链接：[(9条消息) 如何实现远程RDP连接到Centos7_centos 开启rdp远程访问_Mr.BlackJake的博客-CSDN博客](https://blog.csdn.net/qq_43767539/article/details/115257441#:~:text=3.1在键盘上输入win%2BR，输入"mstsc"启动远程桌面连接应用程序，然后输入主机名或IP： 3.2输入用户名root和服务器密码，点击ok连接CentOS,7服务器： 3.3您现在可以使用GNOME通过xRDP连接到CentOS 7服务器：)
 
 ## 安装图形化界面

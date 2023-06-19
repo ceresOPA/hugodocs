@@ -1,4 +1,17 @@
-# 对比学习综述学习
+---
+title: "对比学习综述学习"
+featured: false
+draft: false
+comment: true
+toc: true
+reward: false
+pinned: false
+carousel: false
+math: true
+categories: ["学习"]
+---
+
+<!--more-->
 
 > 参考链接：
 >
