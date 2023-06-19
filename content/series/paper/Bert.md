@@ -8,7 +8,8 @@ reward: false
 pinned: false
 carousel: false
 math: true
-categories: ["学习"]
+series:
+  - paper
 ---
 
 <!--more-->
