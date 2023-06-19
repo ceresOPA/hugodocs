@@ -1,12 +1,15 @@
 ---
-title: "Img2prompt"
-date: 2023-5-11
+title: "img2caption"
+date: 2023-5-20
+featured: false
 draft: false
+comment: true
 toc: true
-featured : true
-tags:
-  - deep learning
-categories: ["学习"]这个
+reward: false
+pinned: false
+carousel: false
+math: true
+categories: ["学习"]
 ---
 
 这个比赛过程没有怎么记录下来有点可惜，最后拿了铜奖，前9%，感觉也还可以，是第一次认真打的kaggle并拿了奖（断断续续做了有一个月的样子）。没有什么太多的个人创新点，主要还是结合了大家分享的方法，然后自己在代码层面上做了些小改，包括后续集成的部分。
